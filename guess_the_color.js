@@ -6,7 +6,7 @@ var finished = false;
 var guesses = 0;
 
 function do_game() {
-    var random_number = Math.random() * 8;
+    var random_number = Math.random() * 9;
     var random_number_rounded = Math.floor(random_number);
     target_index = random_number_rounded;
     target = colors[random_number_rounded];
@@ -33,7 +33,7 @@ function check_guess() {
     }
     else if (guess_input === target) {
         document.body.style.backgroundColor = target;
-        alert("Congratulations! You have guessed my color!\n\nIt took you " + guesses + " guesses to finish the game!\n\n You can see the color displayed in the background.");
+        setTimeout(function(){alert("Congratulations! You have guessed my color!\n\nIt took you " + guesses + " guesses to finish the game!\n\n You can see the color displayed in the background."); }, 150);
         return true;
     }
     
