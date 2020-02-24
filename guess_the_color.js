@@ -1,4 +1,3 @@
-var target_index;
 var target;
 var colors = ["blue", "cyan", "gold", "gray", "green", "magenta", "orange", "teal", "yellow"];
 var guess_input;
