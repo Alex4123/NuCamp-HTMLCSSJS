@@ -8,7 +8,6 @@ var guesses = 0;
 function do_game() {
     var random_number = Math.random() * 9;
     var random_number_rounded = Math.floor(random_number);
-    target_index = random_number_rounded;
     target = colors[random_number_rounded];
 
     while (!finished) {
